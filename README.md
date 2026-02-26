@@ -12,4 +12,4 @@ I am always willing to meet new people in hopes of doing business together. I ca
 
 
 ##### Category
-      • [Name](link, ex.https://github.com/drewglov/Portfolio/blob/master/Regression/Regression%20-%20Stock.ipynb) - In this project, ...
+   • [Google Stock Predictions](https://github.com/drewglov/Portfolio/blob/master/Regression/Regression%20-%20Stock.ipynb) - Example project description
