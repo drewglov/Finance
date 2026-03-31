@@ -1,0 +1,28 @@
+# requirements.txt
+
+# Tier 1: Core Foundation
+pandas
+numpy
+matplotlib
+scipy
+
+# Tier 2: Quant & Econometrics
+statsmodels
+arch
+yfinance
+
+# Tier 3: Machine Learning
+scikit-learn
+xgboost
+lightgbm
+
+# Tier 4: Visualization & Notebooks
+seaborn
+plotly
+jupyterlab
+
+# Tier 5: Performance & Risk
+quantstats
+
+# Tier 6: Specialized
+py_vollib
