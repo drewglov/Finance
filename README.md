@@ -20,7 +20,7 @@ I am always willing to meet new people in hopes of doing business together. I ca
 ##### Volatility Modeling with GARCH
    • [Volatility Modeling with GARCH](https://github.com/drewglov/Finance/blob/main/Volatility%20Modeling/Volatility_Modelling_with_GARCH_OOP.ipynb) - This project builds an industry-standard tool for analyzing and forecasting the time-varying volatility of a financial asset, the most common measure of risk. It utilizes and demonstrates:
 
-- GARCH(1,1) Model for forecasting volatility
+- GARCH(1,1) Model for forecasting volatility - Tool for turning past market behavior into a dynamic, time-updating measure of risk using recent market shocks and recent levels of volatility.
 - Time Series Analysis (Logarithmic Returns, Stationarity)
 - Statistical Justification (Augmented Dickey-Fuller & Engle's ARCH tests)
 - Model Validation via Residual Analysis
