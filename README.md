@@ -16,3 +16,12 @@ I am always willing to meet new people in hopes of doing business together. I ca
 - Numerical Optimization (SciPy) for finding the max Sharpe Ratio portfolio
 - Statistical Analysis (Beta, Jensen's Alpha, Covariance)
 - Object-Oriented Programming: There is an OOP version of this project included in the folder as well
+
+
+
+### Technology & Library Stack
+
+- ***Language***: Python
+- ***Core Libraries***: Pandas, NumPy, Matplotlib, SciPy
+- ***Finance-Specific***: yfinance (for data acquisition), arch (for GARCH modeling), statsmodels (for statistical tests)
+- ***Environment***: Jupyter Notebook
