@@ -1,38 +1,31 @@
 # Project 01: Portfolio Optimization & Asset Pricing (MPT & CAPM)
 
 **Author:** Drew Glover
+
 **Date:** March 31, 2026
 
 ---
 
 ## 1. Project Overview
 
-This project delivers a full implementation of two cornerstone models in quantitative finance: **Modern Portfolio Theory (MPT)** and the **Capital Asset Pricing Model (CAPM)**.
+This project implements two foundational models in quantitative finance: **Modern Portfolio Theory (MPT)** and the **Capital Asset Pricing Model (CAPM)**.
 
-It focuses on addressing two key challenges in portfolio management:
+It addresses two core problems:
 
-* **Portfolio Construction (MPT):** Determining how to allocate capital across multiple risky assets in a way that maximizes expected return for a chosen level of risk. This is fundamentally a problem of **diversification**.
-* **Asset Valuation (CAPM):** Estimating the appropriate expected return of an individual asset based on its exposure to overall market risk. This forms the basis of **risk pricing**.
+* **Portfolio Construction (MPT):** How to allocate capital across assets to maximize return for a given level of risk (diversification).
+* **Asset Pricing (CAPM):** How to estimate the expected return of an asset based on its exposure to market risk.
 
-The notebook walks through the entire pipeline, including data collection, transformation, model implementation, optimization, and visualization of results.
+The notebook walks through the full workflow: data collection, processing, modeling, optimization, and visualization.
 
 ---
 
-## 2. Concepts and Technical Skills
+## 2. Concepts and Skills
 
-This project demonstrates both financial theory and practical implementation:
-
-* **Financial Theory:** Efficient Frontier, Modern Portfolio Theory, CAPM, Security Market Line (SML)
-* **Statistical Tools:** Mean return, volatility, variance, covariance, correlation, beta, Jensen’s alpha
-* **Computational Methods:** Monte Carlo simulation for portfolio generation, optimization via `scipy.optimize`
-* **Python Stack:**
-
-  * `pandas` for time series handling
-  * `numpy` for numerical operations
-  * `yfinance` for market data retrieval
-  * `matplotlib` for plotting
-  * `scipy` for optimization and regression
-* **Software Design:** Object-oriented structure using a reusable `PortfolioOptimizer` class
+* **Financial Models:** MPT, Efficient Frontier, CAPM, Security Market Line (SML)
+* **Statistics:** Mean return, volatility, variance, covariance, correlation, beta, Jensen’s alpha
+* **Methods:** Monte Carlo simulation, numerical optimization (`scipy.optimize`)
+* **Python Tools:** `pandas`, `numpy`, `yfinance`, `matplotlib`, `scipy`
+* **Design:** Object-oriented programming with a reusable `PortfolioOptimizer` class
 
 ---
 
@@ -40,64 +33,43 @@ This project demonstrates both financial theory and practical implementation:
 
 ### A. Core Definitions
 
-**Log Returns**
-Used to convert price series into a more stable return series:
-$$
-R_t = \ln\left(\frac{P_t}{P_{t-1}}\right)
-$$
+**Log Return**
+`R_t = ln(P_t / P_(t-1))`
 
 **Expected Return**
-$$
-E(R_i) = \frac{1}{N} \sum_{t=1}^{N} R_{i,t}
-$$
+`E(R_i) = (1 / N) * Σ R_(i,t)`
 
 **Variance**
-$$
-\sigma_i^2 = \frac{1}{N-1} \sum_{t=1}^{N} (R_{i,t} - \mu_i)^2
-$$
+`σ_i^2 = (1 / (N - 1)) * Σ (R_(i,t) - μ_i)^2`
 
 **Covariance**
-$$
-\text{Cov}(R_i, R_j) = \frac{1}{N-1} \sum (R_{i,t} - \mu_i)(R_{j,t} - \mu_j)
-$$
+`Cov(R_i, R_j) = (1 / (N - 1)) * Σ (R_(i,t) - μ_i)(R_(j,t) - μ_j)`
 
 ---
 
-### B. Modern Portfolio Theory
+### B. Modern Portfolio Theory (MPT)
 
 **Portfolio Return**
-$$
-E(R_p) = \sum w_i E(R_i)
-$$
+`E(R_p) = Σ w_i * E(R_i)`
 
 **Portfolio Variance**
-$$
-\sigma_p^2 = \mathbf{w}^T \mathbf{\Sigma} \mathbf{w}
-$$
+`σ_p^2 = w^T Σ w`
 
 **Sharpe Ratio**
-$$
-\text{Sharpe} = \frac{E(R_p) - R_f}{\sigma_p}
-$$
+`Sharpe = (E(R_p) - R_f) / σ_p`
 
 ---
 
-### C. CAPM
+### C. Capital Asset Pricing Model (CAPM)
 
 **Beta**
-$$
-\beta_i = \frac{\text{Cov}(R_i, R_m)}{\sigma_m^2}
-$$
+`β_i = Cov(R_i, R_m) / σ_m^2`
 
 **Expected Return (CAPM)**
-$$
-E(R_i) = R_f + \beta_i (E(R_m) - R_f)
-$$
+`E(R_i) = R_f + β_i * (E(R_m) - R_f)`
 
 **Jensen’s Alpha**
-$$
-\alpha_i = R_{actual} - E(R_i)
-$$
+`α_i = R_actual - [R_f + β_i * (E(R_m) - R_f)]`
 
 ---
 
@@ -109,41 +81,43 @@ $$
 git clone https://github.com/jvskillup/quant-finance-projects.git
 ```
 
-2. Open the notebook `01_Portfolio_Optimization_OOP.ipynb` using Jupyter or Google Colab
+2. Open `01_Portfolio_Optimization_OOP.ipynb` in Jupyter or Google Colab
 
-3. Execute all cells (`Runtime → Run all`) to reproduce the full analysis
+3. Run all cells to reproduce the full analysis
 
 ---
 
 ## 5. Code Structure
 
-The implementation is organized into a single class: `PortfolioOptimizer`.
+The project is organized around a `PortfolioOptimizer` class:
 
-* **Initialization:** Accepts asset list, market benchmark, date range, and risk-free rate
-* **Helper Methods:** Handle data ingestion and preprocessing (`_download_data`, `_calculate_returns`, etc.)
-* **Main Methods:**
+* **Initialization:** Inputs include asset list, benchmark, date range, and risk-free rate
+* **Helper Methods:** Handle data processing (`_download_data`, `_calculate_returns`, etc.)
+* **Core Methods:**
 
   * `run_mpt_simulation()` → generates random portfolios
-  * `find_optimal_portfolio()` → identifies the maximum Sharpe ratio portfolio
-  * `plot_efficient_frontier()` → visualizes risk-return tradeoffs
+  * `find_optimal_portfolio()` → maximizes Sharpe ratio
+  * `plot_efficient_frontier()` → visualizes results
   * `analyze_and_plot_capm()` → computes CAPM metrics and plots SML
 
 ---
 
 ## 6. Results and Insights
 
-* **MPT Findings:**
-  Using historical data (2018–2023), the optimized portfolio achieved the highest risk-adjusted return with weights approximately:
+* **MPT Results:**
+  Using 2018–2023 data, the optimal portfolio weights were:
   **[Insert weights here]**
-  The corresponding Sharpe ratio was around **[Insert value]**, and the Efficient Frontier illustrates the tradeoff between risk and return.
+  with a Sharpe ratio of approximately **[Insert value]**.
+  The Efficient Frontier illustrates the tradeoff between risk and return.
 
-* **CAPM Findings:**
-  The analysis shows that `AMD` significantly outperformed expectations, producing a Jensen’s Alpha of **+32.32%**. Despite its high beta (1.61), actual returns exceeded model predictions. The SML visualization highlights which assets over- and under-performed.
+* **CAPM Results:**
+  `AMD` showed strong outperformance with a Jensen’s Alpha of **+32.32%**, exceeding expectations given its beta (1.61).
+  The Security Market Line highlights relative performance across assets.
 
 ---
 
 ## 7. Key Takeaways
 
-This project highlights how classical financial models can be implemented in practice. At the same time, it underscores an important limitation: both MPT and CAPM rely heavily on historical data as a proxy for future expectations.
+This project demonstrates how classic financial models can be implemented in practice. It also highlights a major limitation: both MPT and CAPM depend on historical data, which may not accurately predict future performance.
 
-In real-world quantitative finance, these models often serve as a starting point, with more advanced techniques used to improve forecasting and decision-making.
+In practice, these models are often used as a baseline, with more advanced methods applied for forecasting and optimization.
