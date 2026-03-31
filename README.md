@@ -15,7 +15,17 @@ I am always willing to meet new people in hopes of doing business together. I ca
 - Monte Carlo Simulation for generating portfolio possibilities
 - Numerical Optimization (SciPy) for finding the max Sharpe Ratio portfolio
 - Statistical Analysis (Beta, Jensen's Alpha, Covariance)
-- Object-Oriented Programming
+- Object-Oriented Programming: The entire analysis is encapsulated in a professional PortfolioOptimizer class.
+
+##### Volatility Modeling with GARCH
+   • [Volatility Modeling with GARCH](https://github.com/drewglov/Finance/blob/main/Volatility%20Modeling/Volatility_Modelling_with_GARCH_OOP.ipynb) - This project builds an industry-standard tool for analyzing and forecasting the time-varying volatility of a financial asset, the most common measure of risk. It utilizes and demonstrates:
+
+- GARCH(1,1) Model for forecasting volatility
+- Time Series Analysis (Logarithmic Returns, Stationarity)
+- Statistical Justification (Augmented Dickey-Fuller & Engle's ARCH tests)
+- Model Validation via Residual Analysis
+- Maximum Likelihood Estimation
+- Object-Oriented Programming: The analysis is built into a reusable VolatilityModeler class that can be applied to any stock.
 
 
 
