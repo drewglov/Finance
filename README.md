@@ -50,6 +50,19 @@ I am always willing to meet new people in hopes of doing business together. I ca
 - Options Greeks (Delta, Gamma, Theta, Vega, Rho)
 
 
+### Credit Risk
+
+##### Credit Risk Analysis
+   • [Credit Risk Analysis](https://github.com/drewglov/Finance/blob/main/Credit%20Risk%20Analysis/credit-risk-analysis.ipynb) - A comprehensive credit risk analysis of a loan portfolio. The project focuses on evaluating the credit risk of loans in the US market by analyzing exposure at default (EAD), probability of default (PD), recovery rate, loss given default (LGD), and expected loss. It utilizes and demonstrates:
+
+- Probability of Default (PD)
+- Exposure at Default (EAD)
+- Loss Given Default (LGD)
+- Portfolio Metrics
+- Risk Management
+- Credit Portfolio Management
+
+
 ### Technology & Library Stack
 
 - ***Language***: Python
