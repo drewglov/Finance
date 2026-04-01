@@ -7,6 +7,17 @@ I am always willing to meet new people in hopes of doing business together. I ca
 
 ## Contents
 
+### Optimization
+
+##### Crypto Portfolio Optimization
+   • [Crypto Portfolio Optimization](https://github.com/drewglov/Finance/blob/main/Crypto%20Optimization/crypto-portfolio-optmization.ipynb) - A crypto portfolio optimization tool leveraging quantitative methods to balance risk and return, with a focus on mitigating market risks using custom strategies, utilizing and demonstrating:
+
+   - Efficient Frontier
+   - Expected Returns
+   - Risk (Volatility)
+   - Sharpe Ratio
+   - Optimization functions
+
 ##### Portfolio Optimization and Asset Pricing (MPT & CAPM)
    • [Portfolio Optimization and Asset Pricing (MPT & CAPM)](https://github.com/drewglov/Finance/blob/main/Portfolio%20Optimization%20%26%20Asset%20Pricing%20(MPT%20%26%20CAPM)/Portfolio_Optimization_MPT_CAPM_OOP.ipynb) - This project tackles the two foundational questions of modern finance: how to optimally allocate capital and how to price risk. It provides a complete, end-to-end workflow for analyzing a portfolio of equities, utilizing and demonstrating:
 
@@ -16,6 +27,9 @@ I am always willing to meet new people in hopes of doing business together. I ca
 - Numerical Optimization (SciPy) for finding the max Sharpe Ratio portfolio
 - Statistical Analysis (Beta, Jensen's Alpha, Covariance)
 - Object-Oriented Programming: The entire analysis is encapsulated in a professional PortfolioOptimizer class.
+
+
+### Volitility and Options Pricing
 
 ##### Volatility Modeling with GARCH
    • [Volatility Modeling with GARCH](https://github.com/drewglov/Finance/blob/main/Volatility%20Modeling/Volatility_Modelling_with_GARCH_OOP.ipynb) - This project builds an industry-standard tool for analyzing and forecasting the time-varying volatility of a financial asset, the most common measure of risk. It utilizes and demonstrates:
