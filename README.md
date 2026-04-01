@@ -41,6 +41,13 @@ I am always willing to meet new people in hopes of doing business together. I ca
 - Maximum Likelihood Estimation
 - Object-Oriented Programming: The analysis is built into a reusable VolatilityModeler class that can be applied to any stock.
 
+##### Options Pricing
+   • [Options Pricing](https://github.com/drewglov/Finance/blob/main/Options%20Pricing/options-pricing.ipynb) - This project implements and analyzes options pricing models, including the Black-Scholes-Merton model and binomial tree methods. It incorporates implied volatility calculations and Greeks analysis for financial derivatives. It utilizes and demonstrates:
+
+- Black-Scholes-Merton
+- Binomial Trees
+- Implied Volatility
+- Options Greeks (Delta, Gamma, Theta, Vega, Rho)
 
 
 ### Technology & Library Stack
