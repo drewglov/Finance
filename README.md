@@ -7,7 +7,17 @@ I am always willing to meet new people in hopes of doing business together. I ca
 
 ## Contents
 
-### Optimization
+### Strategy and Optimization
+
+##### Multiple Technical Indicator Trading Strategy
+   • [Multiple Technical Indicator Trading Strategy](https://github.com/drewglov/Finance/blob/main/Multiple%20Technical%20Analysis%20Strategy/multiple-ta-strategy.ipynb) - In this project, I use Python to explore a specific trading strategy based on a combination of 7 of the most commonly used technical analysis indicators. I generate trading signals based on a defined set of rules, backtest the strategy, and form an optimally weighted portfolio. The goal is to outperform a standard buy-and-hold strategy of the SPY ETF over a defined period of time. I have selected 7 technical indicators to explore in this project:
+
+- Simple Moving Average (Price)
+- Simple Moving Average (Volume)
+- Average True Range
+- Stochastic Oscillator
+- Relative Strength Index
+- Moving Average Convergence/Divergence (MACD)
 
 ##### Crypto Portfolio Optimization
    • [Crypto Portfolio Optimization](https://github.com/drewglov/Finance/blob/main/Crypto%20Optimization/crypto-portfolio-optmization.ipynb) - A crypto portfolio optimization tool leveraging quantitative methods to balance risk and return, with a focus on mitigating market risks using custom strategies, utilizing and demonstrating:
