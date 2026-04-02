@@ -18,6 +18,7 @@ I am always willing to meet new people in hopes of doing business together. I ca
 - Stochastic Oscillator
 - Relative Strength Index
 - Moving Average Convergence/Divergence (MACD)
+- Bollinger Bands
 
 ##### Crypto Portfolio Optimization
    • [Crypto Portfolio Optimization](https://github.com/drewglov/Finance/blob/main/Crypto%20Optimization/crypto-portfolio-optmization.ipynb) - A crypto portfolio optimization tool leveraging quantitative methods to balance risk and return, with a focus on mitigating market risks using custom strategies, utilizing and demonstrating:
