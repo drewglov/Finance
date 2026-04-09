@@ -9,6 +9,21 @@ I am always willing to meet new people in hopes of doing business together. I ca
 
 ### Strategy and Optimization
 
+##### Quantitative Portfolio Construction
+   • [Quantitative Portfolio Construction](https://github.com/drewglov/Finance/tree/main/Quantitative%20Portfolio%20Construction) - This project seeks to construct portfolios using quantitative analysis/modelling techniques of technical indicators as features, rebalancing the portfolio of stocks every month. Additional information is included within the project folder's README.md. The project focuses on the following indicators:
+
+- Garman-Klass Volatility
+- RSI
+- Bollinger Bands
+- ATR
+- MACD
+- Fama-French 5 Factors
+  -  Mkt-RF: Market excess return
+  -  SMB (Small Minus Big): Size premium (small vs large caps)
+  - HML (High Minus Low): Value premium (high vs low book-to-market)
+  - RMW (Robust Minus Weak): Profitability premium (profitable vs unprofitable firms)
+  - CMA (Conservative Minus Aggressive): Investment premium (low vs high asset growth)
+
 ##### Multiple Technical Indicator Trading Strategy
    • [Multiple Technical Indicator Trading Strategy](https://github.com/drewglov/Finance/blob/main/Multiple%20Technical%20Analysis%20Strategy/multiple-ta-strategy.ipynb) - In this project, I use Python to explore a specific trading strategy based on a combination of 7 of the most commonly used technical analysis indicators. I generate trading signals based on a defined set of rules, backtest the strategy, and form an optimally weighted portfolio. The goal is to outperform a standard buy-and-hold strategy of the SPY ETF over a defined period of time. I have selected 7 technical indicators to explore in this project:
 
