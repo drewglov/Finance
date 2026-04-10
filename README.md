@@ -87,6 +87,11 @@ I am always willing to meet new people in hopes of doing business together. I ca
 - Implied Volatility
 - Options Greeks (Delta, Gamma, Theta, Vega, Rho)
 
+##### Binomial Trees vs Black-Scholes Model for Options Pricing
+   • [Binomial Trees vs Black-Scholes Model for Options Pricing](https://github.com/drewglov/Finance/blob/main/Options%20Pricing/options-pricing-bt-bs.ipynb) - In this project, I implemented and compared the Binomial Tree and Black–Scholes models in Python to price call and put options using key market inputs like stock price, volatility, and interest rates. I then validated both approaches with a real AAPL option example, showing that the models converge to nearly identical prices under the same assumptions. It explores:
+
+- Black-Scholes-Merton
+- Binomial Trees
 
 ### Credit Risk
 
