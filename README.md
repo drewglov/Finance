@@ -7,10 +7,22 @@ I am always willing to meet new people in hopes of doing business together. I ca
 
 ## Contents
 
+### Full Research Pipeline
+
+##### Quantitative Momentum Strategy & Backtesting Pipeline
+   • [Quantitative Momentum Strategy & Backtesting Pipeline](https://github.com/drewglov/Finance/tree/main/Buy%20Side%20Quant%20Strategy) - This project is a quantitative research pipeline that uses Yahoo Finance data to backtest momentum-based investment strategies across the S&P 500 or specific ETF universes. It automates the entire workflow from live data ingestion and quality auditing to portfolio simulation and performance reporting. It utilizes:
+
+- **Automated Pipeline Development**: Uses Python’s argparse and pathlib for a flexible command-line interface, allowing for rapid parameter tuning and strategy iteration.
+- **Data Engineering**: Features a modular ETL (Extract, Transform, Load) pipeline that performs automated data validation, cleaning, and storage using the Parquet format.
+- **Quantitative Momentum Trading**: Implements "Relative Momentum" to rank assets and "Absolute Momentum" (trend following) to filter out losing positions.
+- **Risk Management**: Includes a defensive market switch to move to cash during broad market downturns and accounts for realistic transaction slippage.
+- **Performance Analytics**: Calculates institutional-grade metrics including CAGR, Sharpe Ratio, and Maximum Drawdown to evaluate risk-adjusted returns.
+
+
 ### Strategy and Optimization
 
 ##### Quantitative Portfolio Construction
-   • [Quantitative Portfolio Construction](https://github.com/drewglov/Finance/tree/main/Quantitative%20Portfolio%20Construction) - This project seeks to construct portfolios using quantitative analysis/modelling techniques of technical indicators as features, rebalancing the portfolio of stocks every month. Additional information is included within the project folder's README.md. The project focuses on the following indicators:
+   • [Quantitative Portfolio Construction](https://github.com/drewglov/Finance/tree/main/Quantitative%20Portfolio%20Construction) - This project seeks to construct portfolios using quantitative analysis/modelling techniques of technical indicators as features, rebalancing the portfolio of stocks every month. The project focuses on the following indicators:
 
 - Garman-Klass Volatility
 - RSI
