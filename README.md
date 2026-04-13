@@ -58,6 +58,16 @@ I am always willing to meet new people in hopes of doing business together. I ca
 - Moving Average Convergence/Divergence (MACD)
 - Bollinger Bands
 
+##### Pairs Trading ML Showcase
+   • [Pairs Trading ML Showcase](https://github.com/drewglov/Finance/blob/main/Pairs%20Trading%20ML/Pair-Trading-ML-Showcase.ipynb) - This notebook implements a pairs-trading strategy using machine learning to model the price relationship between two assets, generate a mean-reversion spread signal, and backtest trades based on deviations from that learned relationship - ultimately attempting to profit from the spread reverting to its historical mean. I follow the structure from the [daehkim/pair-trading](https://github.com/daehkim/pair-trading), but in practice the strategy did not produce statistically significant or robust returns across my dataset.
+
+- **Pairs Trading / Statistical Arbitrage**: A market-neutral strategy that goes long one security and short another based on an expected mean-reverting price relationship. It profits if the spread reverts to a norm when the two prices diverge.
+- **Pair Selection & Cointegration**: Before trading, assets are paired based on statistical relationships (often via tests like Engle–Granger or similar), looking for pairs whose price spread is stationary - a key assumption for mean reversion.
+- **Machine Learning for Spread Modeling**: Instead of a simple linear hedge ratio, the strategy uses ML (e.g., polynomial regression with regularization / Lasso) to model the relationship between asset prices and forecast the spread more flexibly (as adapted from the example repo).
+- **Z-Score Signal Generation**: The learned model produces a predicted spread and corresponding z-score (how many standard deviations the current spread is from the mean), which is used as an entry/exit signal for trades.
+- **Backtesting Framework**: The notebook simulates historical trades using the z-score thresholds, calculates returns from long/short positions, and tracks performance over time, though results didn’t show strong alpha or robust profitability.
+- **Mean Reversion Logic**: The core trading assumption is that spread deviations from its mean represent tradable anomalies - entering when the spread is wide and exiting when it reverts.
+
 ##### Crypto Portfolio Optimization
    • [Crypto Portfolio Optimization](https://github.com/drewglov/Finance/blob/main/Crypto%20Optimization/crypto-portfolio-optmization.ipynb) - A crypto portfolio optimization tool leveraging quantitative methods to balance risk and return, with a focus on mitigating market risks using custom strategies, utilizing and demonstrating:
 
