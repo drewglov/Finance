@@ -7,6 +7,18 @@ I am always willing to meet new people in hopes of doing business together. I ca
 
 ## Contents
 
+### Strategies
+
+##### Long-Short-Harvest
+   • [Long-Short-Harvest](https://github.com/drewglov/Finance/blob/main/Long-Short-Harvest/Long-Short-Harvest.ipynb) - This strategy constructs and backtests a long-short portfolio by ranking assets based on predictive signals and taking long positions on “good” assets while shorting “bad” ones to capture relative performance and potentially market-neutral returns. The strategy then measures returns, drawdowns, and performance metrics for evaluation against SPY.
+
+- **Long/Short Portfolio Construction**: Simultaneously taking long positions in assets expected to rise and short positions in assets expected to fall to exploit relative performance.
+- **Ranking or Signal Generation**: Using some model or indicator (e.g., momentum, value, factor score) to rank assets and decide long vs short exposure.
+- **Backtesting Framework**: Simulating historic trades over past data to assess performance, risk, and returns.
+- **Performance Metrics**: Calculating metrics like cumulative returns, Sharpe ratio, drawdown, and turnover.
+- **Rebalancing Logic**: Periodically updating the portfolio based on updated signals and market data.
+
+
 ### Full Research Pipeline
 
 ##### Quantitative Momentum Strategy & Backtesting Pipeline
@@ -18,8 +30,7 @@ I am always willing to meet new people in hopes of doing business together. I ca
 - **Risk Management**: Includes a defensive market switch to move to cash during broad market downturns and accounts for realistic transaction slippage.
 - **Performance Analytics**: Calculates institutional-grade metrics including CAGR, Sharpe Ratio, and Maximum Drawdown to evaluate risk-adjusted returns.
 
-
-### Strategy and Optimization
+### Strategy and Optimization Concepts
 
 ##### Quantitative Portfolio Construction
    • [Quantitative Portfolio Construction](https://github.com/drewglov/Finance/tree/main/Quantitative%20Portfolio%20Construction) - This project seeks to construct portfolios using quantitative analysis/modelling techniques of technical indicators as features, rebalancing the portfolio of stocks every month. The project focuses on the following indicators:
